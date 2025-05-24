@@ -40,9 +40,11 @@ function makeLine(length) {
 }
 
 function buildTriangle(num) {
+  let result = ""
   for (let i = 1; i < num + 1; i++) {
-    console.log(makeLine(i))
+    result += makeLine(i)
   }
+  console.log(result)
 }
 
 buildTriangle(10)
