@@ -20,3 +20,19 @@ console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
 console.log(lastIndexOf([], 3), "=?", -1);
 
 */
+
+function lastIndexOf(arr, num) {
+    let index = -1
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === num) {
+            index = i
+        }
+    }
+    console.log(index)
+}
+
+lastIndexOf([0, 1, 4, 1, 2], 1); 3
+lastIndexOf([0, 1, 4, 1, 2], 2); 4
+lastIndexOf([0, 1, 4, 1, 2], 3); -1
+lastIndexOf([5, 5, 5], 5); 2
+lastIndexOf([], 3); -1
